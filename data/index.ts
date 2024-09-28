@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -8,12 +10,13 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
+    title: "My tech stack",
+    description: "I constantly try to improve",
+    className:
+      " flex lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ",
+    imgClassName: "",
+    titleClassName: "justify-start w-full ",
+    img: "",
     spareImg: "",
   },
   {
@@ -28,12 +31,13 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "I prioritize client collaboration, fostering open communication ",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
+    description: "",
+
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/b1.svg",
     spareImg: "",
   },
   {
@@ -49,7 +53,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a Chrome Extension",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,101 +76,87 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Code clash",
+    des: "Dive into the world of competitive coding with Code Clash, where problem-solving prowess meets real-time competition for developers and enthusiasts alike!",
+    img: "/codeclash.png",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongodbi.svg",
+      "/prisma.svg",
+      "/firebase.svg",
+    ],
+    link: "https://codesclash.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "YouSync",
+    des: "Stream and connect effortlessly with You Sync, where you can sync your screens and share every moment with your besties, no matter the distance!",
+    img: "/yousync.png",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongodbi.svg",
+      "/prisma.svg",
+      "/firebase.svg",
+    ],
+    link: "https://yousyncs.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Netflix Clone",
+    des: " Experience endless entertainment, a Netflix-inspired platform that brings your favorite movies and shows right to your screen. Browse, watch, and enjoy—anytime, anywhere!",
+    img: "/netflix.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/firebase.svg"],
+    link: "https://mellifluous-churros-b1b1d2.netlify.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "ShopEase",
+    des: "Experience effortless shopping with ShopEase, the go-to e-commerce platform where you can explore a vast selection of products, make secure purchases, and enjoy a seamless online shopping experience!",
+    img: "/ecom.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/redux.svg",
+      "/mongodbi.svg",
+    ],
+    link: "https://playful-semifreddo-7b40b8.netlify.app/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Deepanshu is a highly skilled and dedicated professional, and I genuinely recommend him. Having worked with many freelancers, I can confidently say that collaborating with Deepanshu has been one of my best experiences. His attention to detail and ability to deliver exactly what I needed were impressive. He managed the project effectively and often anticipated my needs before I even expressed them. I’m looking forward to working with him again in the near future.",
+    name: "Binbag",
+    title: "E-waste recycling company ",
+    imgl: "/binbag.svg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Deepanshu at Autonomous Web has been a great experience. His expertise, attention to detail, and proactive approach made the web development process seamless. Highly recommended!",
+    name: "Autonomous Web",
+    title: "Web Agency",
+    imgl: "/autweb.jpeg",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Binbag",
+    img: "/binbag.svg",
+    nameImg: "/binbag.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "Autonomous Web",
+    img: "/autweb.jpeg",
+    nameImg: "/autweb.svg",
   },
 ];
 
@@ -205,13 +195,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/deepanshupali",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/deep__nshu",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/deepanshu-pali-8664a4209/",
   },
 ];

@@ -1,9 +1,12 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+interface GridProps {
+  aboutRef: React.RefObject<HTMLElement>;
+}
 
-const Grid = () => {
+const Grid: React.FC<GridProps> = ({ aboutRef }) => {
   return (
-    <section id="about">
+    <section ref={aboutRef}>
       <BentoGrid className="w-full py-20">
         {gridItems.map((item, i) => (
           <BentoGridItem
