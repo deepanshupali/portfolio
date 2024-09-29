@@ -4,7 +4,26 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
-const Hero = () => {
+interface AboutProps {
+  aboutRef: React.RefObject<HTMLElement>;
+}
+const Hero: React.FC<AboutProps> = ({ aboutRef }) => {
+  const handleScroll = (
+    ref?: React.RefObject<HTMLElement>,
+    offset: number = 0
+  ) => {
+    if (ref && ref.current) {
+      const elementPosition =
+        ref.current.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="pb-20 pt-36">
       {/**
@@ -56,14 +75,25 @@ const Hero = () => {
             Hi! I&apos;m Deepanshu, a a Frontend Developer with over a year of
             experience, based in New Delhi, India..
           </p>
-
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex  gap-4">
+            <button
+              onClick={() => handleScroll(aboutRef)}
+              className="hidden sm:block"
+            >
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </button>
+            <a href="/upresume.pdf" download>
+              <MagicButton
+                title="Download CV"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
