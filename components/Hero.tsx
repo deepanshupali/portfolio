@@ -72,8 +72,8 @@ const Hero: React.FC<AboutProps> = ({ aboutRef }) => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Deepanshu, a a Frontend Developer with over a year of
-            experience, based in New Delhi, India..
+            Hi! I&apos;m Deepanshu, a Full-stack developer, based in New Delhi,
+            India..
           </p>
           <div className="flex  gap-4">
             <button
