@@ -68,7 +68,7 @@ const Timeline: React.FC = () => {
             Binbag Pvt Ltd.
           </h1>
           <h2 className="text-start text-2xl !text-white mt-3 font-black">
-            Frontend Engineer
+            Full-stack Developer
           </h2>
           <p className="text-start text-white-100 mt-3 font-semibold">
             January 2024 - June 2024
